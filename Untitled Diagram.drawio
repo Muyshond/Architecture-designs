@@ -1,0 +1,124 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="CustomTable-IDM-sync" id="SWRuk7K-5z_ix3xYxI54">
+    <mxGraphModel dx="1712" dy="919" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="cb3seKO5RqnBj8ZKgsuc-1" parent="1" style="text;html=1;align=left;verticalAlign=middle;fontSize=16;fontColor=#333333;" value="&lt;b&gt;CustomTable-IDM-sync&lt;/b&gt; – daily sync of backend table to SAP IDM" vertex="1">
+          <mxGeometry height="30" width="900" x="40" as="geometry" />
+        </mxCell>
+        <mxCell id="cb3seKO5RqnBj8ZKgsuc-2" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;dashed=1;dashPattern=8 4;fillColor=#F5F9FF;strokeColor=#0A6ED1;strokeWidth=1.5;verticalAlign=top;align=left;spacingLeft=12;spacingTop=6;fontSize=14;fontColor=#0A6ED1;container=0;" value="&lt;b&gt;SAP BTP&lt;/b&gt;&lt;b&gt;&amp;nbsp;&lt;/b&gt;&lt;b&gt;&amp;nbsp;61 -&amp;nbsp;&lt;/b&gt;&lt;b&gt;AUTH -&amp;nbsp;&lt;/b&gt;&lt;b&gt;DEV&amp;nbsp;&amp;nbsp;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="470" width="780" x="40" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="cb3seKO5RqnBj8ZKgsuc-3" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;dashed=1;dashPattern=8 4;fillColor=#F7F7F7;strokeColor=#6A6D70;strokeWidth=1.5;verticalAlign=top;align=left;spacingLeft=12;spacingTop=6;fontSize=14;fontColor=#32363A;" value="&lt;b&gt;On-premise&lt;/b&gt;&lt;div&gt;&lt;br/&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="470" width="420" x="860" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="cb3seKO5RqnBj8ZKgsuc-4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#0A6ED1;fontSize=13;" value="&lt;b&gt;SAP Job Scheduling Service&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:11px&quot;&gt;daily schedule&lt;/font&gt;" vertex="1">
+          <mxGeometry height="110" width="170" x="80" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="cb3seKO5RqnBj8ZKgsuc-5" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF4E0;strokeColor=#D79B00;fontSize=13;" value="&lt;b&gt;XSUAA&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:11px&quot;&gt;authentication&lt;/font&gt;" vertex="1">
+          <mxGeometry height="70" width="170" x="80" y="400" as="geometry" />
+        </mxCell>
+        <mxCell id="cb3seKO5RqnBj8ZKgsuc-6" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#0A6ED1;strokeColor=#085CAF;fontColor=#FFFFFF;fontSize=14;" value="&lt;b&gt;CustomTable-IDM-sync&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:11px&quot;&gt;CAP app (Java)&lt;/font&gt;" vertex="1">
+          <mxGeometry height="110" width="200" x="340" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="cb3seKO5RqnBj8ZKgsuc-7" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#0A6ED1;fontSize=13;" value="&lt;b&gt;Destination Service&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:11px&quot;&gt;SBTCLNT200 (RFC)&lt;br&gt;IDMrestapi (HTTP)&lt;/font&gt;" vertex="1">
+          <mxGeometry height="90" width="170" x="620" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="cb3seKO5RqnBj8ZKgsuc-8" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#0A6ED1;fontSize=13;" value="&lt;b&gt;Connectivity Service&lt;/b&gt;" vertex="1">
+          <mxGeometry height="110" width="170" x="620" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="cb3seKO5RqnBj8ZKgsuc-9" parent="1" style="shape=note;size=14;whiteSpace=wrap;html=1;fillColor=#FFF2CC;strokeColor=#B09500;fontSize=12;align=left;spacingLeft=8;spacingRight=8;" value="&lt;b&gt;4 · Decide per user&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:11px&quot;&gt;Which IdM business roles to add or remove, based on validity dates, movement + active flag, and SAP role → IdM role mapping&lt;/font&gt;" vertex="1">
+          <mxGeometry height="110" width="220" x="330" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="cb3seKO5RqnBj8ZKgsuc-10" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#6A6D70;fontSize=13;" value="&lt;b&gt;SAP Cloud Connector&lt;/b&gt;" vertex="1">
+          <mxGeometry height="110" width="150" x="885" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="cb3seKO5RqnBj8ZKgsuc-11" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#1F6FB2;strokeWidth=1.5;fontSize=13;" value="&lt;b&gt;SAP backend SBPX&lt;/b&gt;&lt;div&gt;&lt;font style=&quot;font-size:11px&quot;&gt;Table ZMBXHRWEBUSER&lt;br&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="100" width="180" x="1080" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="cb3seKO5RqnBj8ZKgsuc-12" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FAD9D3;strokeColor=#D6452B;strokeWidth=1.5;fontSize=13;" value="&lt;b&gt;SAP Identity Management&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:11px&quot;&gt;REST API&lt;br&gt;&lt;i&gt;Target · only system written to&lt;/i&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="100" width="180" x="1080" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="cb3seKO5RqnBj8ZKgsuc-13" edge="1" parent="1" source="cb3seKO5RqnBj8ZKgsuc-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#D79B00;strokeWidth=2;dashed=1;fontColor=#8A6400;fontSize=11;labelBackgroundColor=#F5F9FF;endArrow=block;endFill=1;" target="cb3seKO5RqnBj8ZKgsuc-5" value="1 · get token">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cb3seKO5RqnBj8ZKgsuc-14" edge="1" parent="1" source="cb3seKO5RqnBj8ZKgsuc-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#555555;strokeWidth=2;fontSize=11;labelBackgroundColor=#F5F9FF;exitX=1;exitY=0.3;entryX=0;entryY=0.3;endArrow=block;endFill=1;" target="cb3seKO5RqnBj8ZKgsuc-6" value="2 · daily trigger&lt;br&gt;runSync">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cb3seKO5RqnBj8ZKgsuc-15" edge="1" parent="1" source="cb3seKO5RqnBj8ZKgsuc-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#555555;strokeWidth=2;dashed=1;dashPattern=2 3;fontSize=11;labelBackgroundColor=#F5F9FF;exitX=0;exitY=0.75;entryX=1;entryY=0.75;endArrow=block;endFill=1;" target="cb3seKO5RqnBj8ZKgsuc-4" value="6 · result summary">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cb3seKO5RqnBj8ZKgsuc-16" edge="1" parent="1" source="cb3seKO5RqnBj8ZKgsuc-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#8A8A8A;strokeWidth=1;dashed=1;fontSize=10;fontColor=#6A6D70;labelBackgroundColor=#F5F9FF;exitX=0.5;exitY=0;entryX=0;entryY=0.5;endArrow=open;" target="cb3seKO5RqnBj8ZKgsuc-7" value="look up destination">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cb3seKO5RqnBj8ZKgsuc-17" edge="1" parent="1" source="cb3seKO5RqnBj8ZKgsuc-6" style="rounded=0;html=1;strokeColor=#B09500;strokeWidth=1;dashed=1;endArrow=none;" target="cb3seKO5RqnBj8ZKgsuc-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cb3seKO5RqnBj8ZKgsuc-18" edge="1" parent="1" source="cb3seKO5RqnBj8ZKgsuc-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#1F6FB2;strokeWidth=2;fontColor=#1F6FB2;fontSize=11;labelBackgroundColor=#F5F9FF;exitX=1;exitY=0.3;entryX=0;entryY=0.3;endArrow=block;endFill=1;" target="cb3seKO5RqnBj8ZKgsuc-8" value="3 · RFC read">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cb3seKO5RqnBj8ZKgsuc-19" edge="1" parent="1" source="cb3seKO5RqnBj8ZKgsuc-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#1F6FB2;strokeWidth=2;exitX=1;exitY=0.3;entryX=0;entryY=0.3;endArrow=block;endFill=1;" target="cb3seKO5RqnBj8ZKgsuc-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cb3seKO5RqnBj8ZKgsuc-20" edge="1" parent="1" source="cb3seKO5RqnBj8ZKgsuc-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#1F6FB2;strokeWidth=2;fontColor=#1F6FB2;fontSize=11;labelBackgroundColor=#F7F7F7;exitX=1;exitY=0.3;entryX=0;entryY=0.5;endArrow=block;endFill=1;" target="cb3seKO5RqnBj8ZKgsuc-11" value="3 · read ZMBXHRWEBUSER">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cb3seKO5RqnBj8ZKgsuc-21" edge="1" parent="1" source="cb3seKO5RqnBj8ZKgsuc-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#D6452B;strokeWidth=2;dashed=1;dashPattern=8 4;fontColor=#B0371F;fontSize=11;labelBackgroundColor=#F5F9FF;exitX=1;exitY=0.7;entryX=0;entryY=0.7;endArrow=block;endFill=1;" target="cb3seKO5RqnBj8ZKgsuc-8" value="5 · HTTPS REST">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cb3seKO5RqnBj8ZKgsuc-22" edge="1" parent="1" source="cb3seKO5RqnBj8ZKgsuc-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#D6452B;strokeWidth=2;dashed=1;dashPattern=8 4;exitX=1;exitY=0.7;entryX=0;entryY=0.7;endArrow=block;endFill=1;" target="cb3seKO5RqnBj8ZKgsuc-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cb3seKO5RqnBj8ZKgsuc-23" edge="1" parent="1" source="cb3seKO5RqnBj8ZKgsuc-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#D6452B;strokeWidth=2;dashed=1;dashPattern=8 4;fontColor=#B0371F;fontSize=11;labelBackgroundColor=#F7F7F7;exitX=1;exitY=0.7;entryX=0;entryY=0.5;endArrow=block;endFill=1;" target="cb3seKO5RqnBj8ZKgsuc-12" value="5 · assign / remove&lt;br&gt;business roles">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cb3seKO5RqnBj8ZKgsuc-24" parent="1" style="rounded=1;arcSize=6;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#BBBBBB;" value="" vertex="1">
+          <mxGeometry height="70" width="780" x="40" y="540" as="geometry" />
+        </mxCell>
+        <mxCell id="cb3seKO5RqnBj8ZKgsuc-25" parent="1" style="text;html=1;align=left;verticalAlign=middle;fontSize=12;" value="&lt;b&gt;Legend&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="60" x="55" y="560" as="geometry" />
+        </mxCell>
+        <mxCell id="cb3seKO5RqnBj8ZKgsuc-26" edge="1" parent="1" style="endArrow=block;endFill=1;html=1;strokeColor=#D79B00;strokeWidth=2;dashed=1;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="125" y="575" as="sourcePoint" />
+            <mxPoint x="165" y="575" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="cb3seKO5RqnBj8ZKgsuc-27" parent="1" style="text;html=1;align=left;verticalAlign=middle;fontSize=11;" value="Authentication" vertex="1">
+          <mxGeometry height="20" width="90" x="170" y="565" as="geometry" />
+        </mxCell>
+        <mxCell id="cb3seKO5RqnBj8ZKgsuc-28" edge="1" parent="1" style="endArrow=block;endFill=1;html=1;strokeColor=#1F6FB2;strokeWidth=2;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="270" y="575" as="sourcePoint" />
+            <mxPoint x="310" y="575" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="cb3seKO5RqnBj8ZKgsuc-29" parent="1" style="text;html=1;align=left;verticalAlign=middle;fontSize=11;" value="RFC read (SAP)" vertex="1">
+          <mxGeometry height="20" width="100" x="315" y="565" as="geometry" />
+        </mxCell>
+        <mxCell id="cb3seKO5RqnBj8ZKgsuc-30" edge="1" parent="1" style="endArrow=block;endFill=1;html=1;strokeColor=#D6452B;strokeWidth=2;dashed=1;dashPattern=8 4;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="425" y="575" as="sourcePoint" />
+            <mxPoint x="465" y="575" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="cb3seKO5RqnBj8ZKgsuc-31" parent="1" style="text;html=1;align=left;verticalAlign=middle;fontSize=11;" value="HTTPS write (IdM)" vertex="1">
+          <mxGeometry height="20" width="110" x="470" y="565" as="geometry" />
+        </mxCell>
+        <mxCell id="cb3seKO5RqnBj8ZKgsuc-32" edge="1" parent="1" style="endArrow=block;endFill=1;html=1;strokeColor=#555555;strokeWidth=2;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="590" y="575" as="sourcePoint" />
+            <mxPoint x="630" y="575" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="cb3seKO5RqnBj8ZKgsuc-33" parent="1" style="text;html=1;align=left;verticalAlign=middle;fontSize=11;" value="Trigger / result" vertex="1">
+          <mxGeometry height="20" width="100" x="635" y="565" as="geometry" />
+        </mxCell>
+        <mxCell id="cb3seKO5RqnBj8ZKgsuc-34" parent="1" style="text;html=1;align=left;verticalAlign=middle;fontSize=11;fontColor=#555555;" value="&lt;i&gt;Result summary: provisioned · deprovisioned · unchanged · skipped · failed&lt;/i&gt;" vertex="1">
+          <mxGeometry height="20" width="600" x="125" y="587" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
